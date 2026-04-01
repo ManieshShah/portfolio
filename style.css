@@ -1,0 +1,191 @@
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+background: #e8e3b5;
+color: #0d1b2a;
+}
+
+/* Navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 60px;
+}
+
+.navbar a {
+margin-left: 25px;
+text-decoration: none;
+color: #0d1b2a;
+font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 60px;
+flex-wrap: wrap;
+}
+
+/* Text */
+.hero-text p {
+font-size: 18px;
+}
+
+.hero-text h1 {
+font-size: 60px;
+margin: 10px 0;
+}
+
+/* Button */
+.btn {
+display: inline-block;
+margin-top: 20px;
+padding: 10px 22px;
+border: 2px solid #0d1b2a;
+text-decoration: none;
+color: #0d1b2a;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: #0d1b2a;
+color: white;
+}
+
+/* Social */
+.socials {
+margin-top: 20px;
+}
+
+.socials a {
+margin-right: 15px;
+text-decoration: none;
+color: #0d1b2a;
+}
+
+/* IMAGE STYLE (Figma-like) */
+.hero-img {
+position: relative;
+margin-top: 30px;
+}
+
+/* Outer circle */
+.hero-img::before {
+content: "";
+position: absolute;
+width: 320px;
+height: 320px;
+border-radius: 50%;
+border: 2px solid #0d1b2a;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+/* Profile image */
+.hero-img img {
+width: 280px;
+height: 280px;
+border-radius: 50%;
+object-fit: cover;
+display: block;
+position: relative;
+z-index: 1;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Sections */
+.section {
+padding: 60px;
+}
+
+h2 {
+font-size: 40px;
+}
+
+/* Projects */
+.project {
+margin-top: 20px;
+}
+
+.project a {
+margin-right: 10px;
+color: #0d1b2a;
+text-decoration: none;
+}
+
+/* Follow Section */
+.follow {
+text-align: center;
+}
+
+.social-links {
+margin-top: 20px;
+}
+
+.social-links a {
+display: inline-block;
+margin: 10px;
+padding: 10px 15px;
+border: 2px solid #0d1b2a;
+text-decoration: none;
+color: #0d1b2a;
+transition: 0.3s;
+}
+
+.social-links a:hover {
+background: #0d1b2a;
+color: white;
+}
+
+/* Animations */
+.fade-in {
+animation: fadeIn 1.2s ease forwards;
+}
+
+.slide-up {
+animation: slideUp 1s ease forwards;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+@keyframes slideUp {
+from { transform: translateY(20px); opacity: 0; }
+to { transform: translateY(0); opacity: 1; }
+}
+
+/* RESPONSIVE (very important) */
+@media (max-width: 768px) {
+.hero {
+flex-direction: column;
+text-align: center;
+}
+
+```
+.hero-text h1 {
+    font-size: 40px;
+}
+
+.hero-img img {
+    width: 220px;
+    height: 220px;
+}
+
+.hero-img::before {
+    width: 260px;
+    height: 260px;
+}
+
+.navbar {
+    flex-direction: column;
+    gap: 10px;
+}
+```
+
+}
